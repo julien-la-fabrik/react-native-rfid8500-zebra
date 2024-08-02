@@ -65,8 +65,18 @@ dependencies {
   // For < 0.71, this will be from the local maven repo
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
+
   compileOnly files(file('libs').listFiles())
-  implementation files(file('libs').listFiles())
+  // implementation files(file('libs').listFiles())
+  implementation(name: 'API3_ASCII-release-2.0.2.125', ext: 'aar')
+  implementation(name: 'API3_CMN-release-2.0.2.125', ext: 'aar')
+  implementation(name: 'API3_INTERFACE-release-2.0.2.125', ext: 'aar')
+  implementation(name: 'API3_LLRP-release-2.0.2.125', ext: 'aar')
+  implementation(name: 'API3_READER-release-2.0.2.125', ext: 'aar')
+  implementation(name: 'API3_TRANSPORT-release-2.0.2.125', ext: 'aar')
+  implementation(name: 'API3_ZIOTC-release-2.0.2.125', ext: 'aar')
+  implementation(name: 'API3_ZIOTCTRANSPORT-release-2.0.2.1255', ext: 'aar')
+  implementation(name: 'BarcodeScannerLibrary-release-2.6.9.3', ext: 'aar')
   implementation "com.facebook.react:react-native:+"
 }
 
